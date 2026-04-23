@@ -1,0 +1,35 @@
+﻿@model IEnumerable<PhotoStudio.Models.Service>
+
+@{
+    ViewData["Title"] = "Наши услуги";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortBy="Name">Название</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortBy="Price">Цена (₽)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortBy="Duration">Длительность (мин)</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@(item.DurationMinutes > 0 ? item.DurationMinutes.ToString() : "—")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p><a asp-controller="Home" asp-action="Index" class="btn btn-primary">Вернуться на главную</a></p>
