@@ -1,22 +1,25 @@
 ﻿@model IEnumerable<PhotoStudio.Models.Service>
 
 @{
-    ViewData["Title"] = "Наши услуги";
+    ViewData["Title"] = "Услуги";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="section-title">Наши услуги</h1>
 
-<table class="table table-striped">
+<table class="gridview-table">
     <thead>
         <tr>
             <th>
-                <a asp-action="Index" asp-route-sortBy="Name">Название</a>
+                Название услуги
+                <a asp-action="Index" asp-route-sortBy="Name" class="sort-link">▲</a>
             </th>
             <th>
-                <a asp-action="Index" asp-route-sortBy="Price">Цена (₽)</a>
+                Цена (₽)
+                <a asp-action="Index" asp-route-sortBy="Price" class="sort-link">▲</a>
             </th>
             <th>
-                <a asp-action="Index" asp-route-sortBy="Duration">Длительность (мин)</a>
+                Длительность
+                <a asp-action="Index" asp-route-sortBy="Duration" class="sort-link">▲</a>
             </th>
         </tr>
     </thead>
@@ -25,11 +28,13 @@
         {
             <tr>
                 <td>@item.Name</td>
-                <td>@item.Price</td>
-                <td>@(item.DurationMinutes > 0 ? item.DurationMinutes.ToString() : "—")</td>
+                <td>@item.Price ₽</td>
+                <td>@(item.DurationMinutes > 0 ? $"{item.DurationMinutes} мин" : "—")</td>
             </tr>
         }
     </tbody>
 </table>
 
-<p><a asp-controller="Home" asp-action="Index" class="btn btn-primary">Вернуться на главную</a></p>
+<div style="margin-top: 40px;">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline">← На главную</a>
+</div>

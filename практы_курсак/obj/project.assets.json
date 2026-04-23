@@ -4022,11 +4022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\13\\source\\repos\\практы_курсак\\практы_курсак.csproj",
+      "projectUniqueName": "C:\\Users\\13\\Desktop\\curs\\практы_курсак\\практы_курсак.csproj",
       "projectName": "практы_курсак",
-      "projectPath": "C:\\Users\\13\\source\\repos\\практы_курсак\\практы_курсак.csproj",
+      "projectPath": "C:\\Users\\13\\Desktop\\curs\\практы_курсак\\практы_курсак.csproj",
       "packagesPath": "C:\\Users\\13\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\13\\source\\repos\\практы_курсак\\obj\\",
+      "outputPath": "C:\\Users\\13\\Desktop\\curs\\практы_курсак\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

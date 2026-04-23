@@ -1,6 +1,11 @@
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\logo.jpg
+wwwroot\images\photo1.jpg
+wwwroot\images\photo2.jpg
+wwwroot\images\photo3.jpg
+wwwroot\images\photo4.jpg
+wwwroot\images\photo5.jpg
+wwwroot\images\photo6.jpg
 wwwroot\images\studio-banner.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,3 +65,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\site.css

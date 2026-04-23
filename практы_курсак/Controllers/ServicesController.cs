@@ -1,33 +1,37 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PhotoStudio.Models;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace PhotoStudio.Controllers;
-
-public class ServicesController : Controller
+namespace PhotoStudio.Controllers
 {
-    private List<Service> GetServices()
+    public class ServicesController : Controller
     {
-        return new List<Service>
+        private List<Service> GetServices()
         {
-            new() { Id = 1, Name = "Семейная фотосессия", Price = 5000, DurationMinutes = 60 },
-            new() { Id = 2, Name = "Портретная съёмка", Price = 4000, DurationMinutes = 45 },
-            new() { Id = 3, Name = "Ретушь фото", Price = 1500, DurationMinutes = 30 },
-            new() { Id = 4, Name = "Фотокнига", Price = 3500, DurationMinutes = 0 }
-        };
-    }
+            return new List<Service>
+            {
+                new() { Id = 1, Name = "Семейная фотосессия", Price = 5000, DurationMinutes = 60 },
+                new() { Id = 2, Name = "Портретная съёмка", Price = 4000, DurationMinutes = 45 },
+                new() { Id = 3, Name = "Ретушь фото", Price = 1500, DurationMinutes = 30 },
+                new() { Id = 4, Name = "Фотокнига", Price = 3500, DurationMinutes = 0 },
+                new() { Id = 5, Name = "Love story", Price = 7000, DurationMinutes = 90 }
+            };
+        }
 
-    public IActionResult Index(string sortBy = "Name")
-    {
-        var services = GetServices();
-
-        services = sortBy switch
+        public IActionResult Index(string sortBy = "Name")
         {
-            "Price" => services.OrderBy(s => s.Price).ToList(),
-            "Duration" => services.OrderBy(s => s.DurationMinutes).ToList(),
-            _ => services.OrderBy(s => s.Name).ToList()
-        };
+            var services = GetServices();
 
-        ViewBag.SortBy = sortBy;
-        return View(services);
+            services = sortBy switch
+            {
+                "Price" => services.OrderBy(s => s.Price).ToList(),
+                "Duration" => services.OrderBy(s => s.DurationMinutes).ToList(),
+                _ => services.OrderBy(s => s.Name).ToList()
+            };
+
+            ViewBag.SortBy = sortBy;
+            return View(services);
+        }
     }
 }

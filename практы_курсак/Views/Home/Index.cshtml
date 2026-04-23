@@ -1,25 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Добро пожаловать";
+    ViewData["Title"] = "Главная";
 }
 
-<div class="text-center">
-    <h1 class="display-4">@ViewData["Title"]</h1>
-    <p>Профессиональная фотостудия в центре города.</p>
-    <p>Студийная съёмка, ретушь, фотокниги и альбомы.</p>
-    <a class="btn btn-success" asp-controller="Services" asp-action="Index">Посмотреть услуги</a>
+<div class="hero">
+    <h1 class="hero-title">Фотостудия<br>ART-Кадр</h1>
+    <p class="hero-subtitle">Минимализм. Качество. Современный подход.</p>
+    <a asp-controller="Services" asp-action="Index" class="btn btn-primary">Смотреть услуги →</a>
 </div>
 
-<div class="row mt-5">
-    <div class="col-md-4">
-        <h3>Современное оборудование</h3>
-        <p>Профессиональный свет, фоны, камеры.</p>
+<div class="features">
+    <div class="features-item">
+        <div class="features-icon"></div>
+        <h3>Профессиональная съёмка</h3>
+        <p>Современное оборудование, опытные фотографы.</p>
     </div>
-    <div class="col-md-4">
-        <h3>Опытные фотографы</h3>
-        <p>Работаем с 2015 года, более 1000 довольных клиентов.</p>
+    <div class="features-item">
+        <div class="features-icon"></div>
+        <h3>Ретушь и обработка</h3>
+        <p>Тонкая цветокоррекция, ретушь любой сложности.</p>
     </div>
-    <div class="col-md-4">
-        <h3>Удобное расположение</h3>
-        <p>Метро, парковка, студия 80 м².</p>
+    <div class="features-item">
+        <div class="features-icon"></div>
+        <h3>Фотокниги</h3>
+        <p>Уникальные фотокниги премиум-качества.</p>
     </div>
+</div>
+
+<div class="hero-image">
+    <img src="~/images/studio.jpg" alt="Фотостудия" />
 </div>
