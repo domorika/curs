@@ -1,0 +1,24 @@
+﻿
+:root {
+    --bg-body: #FFFFFF;
+    --bg-header: rgba(255, 255, 255, 0.98);
+    --border-color: #EAEAEA;
+    --text-primary: #1A1A1A;
+    --text-secondary: #6B6B6B;
+    --bg-menu: transparent;
+    --bg-card: #FFFFFF;
+    --card-border: #EEEEEE;
+    --bg-table-header: #F8F8F8;
+    --btn-bg: #1A1A1A;
+    --btn-text: white;
+    --btn-bg-hover: #333333;
+    --btn-outline-border: #CCCCCC;
+    --footer-bg: #FAFAFA;
+    --hero-title: #1A1A1A;
+    --link-color: #4A4A4A;
+    --link-hover: #000000;
+    --instagram-bg: #FAFAFA;
+    --instagram-border: #EAEAEA;
+    --instagram-text: #1A1A1A;
+    --instagram-accent: #1A1A1A;
+}

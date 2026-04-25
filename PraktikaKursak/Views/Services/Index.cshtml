@@ -1,0 +1,40 @@
+﻿@model IEnumerable<практы_курсак.Models.Service>
+
+@{
+    ViewData["Title"] = "Услуги";
+}
+
+<h1 class="section-title">Наши услуги</h1>
+
+<table class="gridview-table">
+    <thead>
+        <tr>
+            <th>
+                Название услуги
+                <a asp-action="Index" asp-route-sortBy="Name" class="sort-link">▲</a>
+            </th>
+            <th>
+                Цена (₽)
+                <a asp-action="Index" asp-route-sortBy="Price" class="sort-link">▲</a>
+            </th>
+            <th>
+                Длительность
+                <a asp-action="Index" asp-route-sortBy="Duration" class="sort-link">▲</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price ₽</td>
+                <td>@(item.DurationMinutes > 0 ? $"{item.DurationMinutes} мин" : "—")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="margin-top: 40px;">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline">← На главную</a>
+</div>
