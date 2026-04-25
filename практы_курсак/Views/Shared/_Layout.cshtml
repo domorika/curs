@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Фотостудия</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <a asp-controller="Home" asp-action="Index" class="logo">
+                        <img src="~/images/logo.jpg" alt="Логотип" class="logo-img" />
+                        <span class="logo-text">ART-Кадр</span>
+                    </a>
+                    <nav class="nav">
+                        <a asp-controller="Home" asp-action="Index" class="nav-link">Главная</a>
+                        <a asp-controller="Services" asp-action="Index" class="nav-link">Услуги</a>
+                        <a asp-controller="Portfolio" asp-action="Index" class="nav-link">Портфолио</a>
+                        <a asp-controller="Contacts" asp-action="Index" class="nav-link">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                @RenderBody()
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <p>&copy; @DateTime.Now.Year ART-Кадр. Все права защищены.</p>
+                    <div class="footer-links">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                        <a asp-controller="Services" asp-action="Index">Услуги</a>
+                        <a asp-controller="Portfolio" asp-action="Index">Портфолио</a>
+                        <a asp-controller="Contacts" asp-action="Index">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

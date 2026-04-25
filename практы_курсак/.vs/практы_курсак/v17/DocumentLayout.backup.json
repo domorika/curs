@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\views\\contacts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\contacts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "Models\\Service.cs",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Models\\Service.cs",
+              "RelativeToolTip": "Models\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T16:07:27.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T17:58:19.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T17:29:22.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T17:58:20.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactsController.cs",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\ContactsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactsController.cs",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\ContactsController.cs",
+              "RelativeToolTip": "Controllers\\ContactsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:08:52.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:29:15.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "Controllers\\PortfolioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:08:14.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServicesController.cs",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:21:02.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-20T16:26:44.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Portfolio\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Portfolio\\Index.cshtml",
+              "RelativeToolTip": "Views\\Portfolio\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-23T11:10:48.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-20T16:57:06.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Services\\Index.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "Views\\Services\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T17:23:48.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-23T10:13:24.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Contacts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contacts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Views\\Contacts\\Index.cshtml",
+              "RelativeToolTip": "Views\\Contacts\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-23T11:11:25.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T20:28:51.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAADUBAAAAAAAAAAAAACkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-21T17:55:17.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj",
+              "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj",
+              "RelativeDocumentMoniker": "\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj",
+              "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A\\\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj",
+              "RelativeToolTip": "\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-20T16:17:12.374Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

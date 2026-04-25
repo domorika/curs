@@ -1,0 +1,9 @@
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo1.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo11.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo2.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo3.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo4.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo5.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo6.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo7.jpg
+C:\Users\13\Desktop\curs-pr2\практы_курсак\wwwroot\images\photo8.jpg
