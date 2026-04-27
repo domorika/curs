@@ -1,5 +1,6 @@
 wwwroot\css\dark-theme.css
 wwwroot\css\light-theme.css
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\logo.jpg
 wwwroot\images\photo10.jpg
@@ -8,6 +9,7 @@ wwwroot\images\photo13.jpg
 wwwroot\images\photo9.jpg
 wwwroot\images\studio-banner.png
 wwwroot\js\site.js
+wwwroot\js\theme-switcher.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -65,5 +67,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
-wwwroot\js\theme-switcher.js

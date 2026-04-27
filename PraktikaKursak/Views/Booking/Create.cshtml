@@ -1,0 +1,108 @@
+﻿@using практы_курсак.Models
+@model BookingViewModel
+
+@{
+    ViewData["Title"] = "Запись на съёмку";
+    var services = ViewBag.Services as List<Service>;
+}
+
+<h1 class="section-title">Запись на съёмку</h1>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert-success" style="background: #4CAF50; color: white; padding: 12px; border-radius: 8px; margin-bottom: 20px;">
+        @TempData["Success"]
+    </div>
+}
+
+<div class="contact-grid">
+    <div class="contact-info">
+        <form asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="All" class="text-danger" style="color: red; margin-bottom: 15px;"></div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="ServiceId" style="display: block; margin-bottom: 5px; font-weight: 600;">Выберите услугу *</label>
+                <select asp-for="ServiceId" class="form-control" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);">
+                    <option value="">-- Выберите услугу --</option>
+                    @if (services != null)
+                    {
+                        foreach (var service in services)
+                        {
+                            <option value="@service.Id">@service.Name - @service.Price ₽ (@service.DurationMinutes мин)</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="FullName" style="display: block; margin-bottom: 5px; font-weight: 600;">Ваше ФИО *</label>
+                <input asp-for="FullName" class="form-control" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);" />
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Phone" style="display: block; margin-bottom: 5px; font-weight: 600;">Телефон *</label>
+                <input asp-for="Phone" class="form-control" required placeholder="+7 (XXX) XXX-XX-XX" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);" />
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Email" style="display: block; margin-bottom: 5px; font-weight: 600;">Email</label>
+                <input asp-for="Email" class="form-control" type="email" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);" />
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="BookingDate" style="display: block; margin-bottom: 5px; font-weight: 600;">Дата съёмки *</label>
+                <input asp-for="BookingDate" type="date" class="form-control" required min="@DateTime.Now.ToString("yyyy-MM-dd")" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);" />
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="BookingTime" style="display: block; margin-bottom: 5px; font-weight: 600;">Время съёмки *</label>
+                <select asp-for="BookingTime" class="form-control" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);">
+                    <option value="">-- Выберите время --</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Notes" style="display: block; margin-bottom: 5px; font-weight: 600;">Пожелания/Примечания</label>
+                <textarea asp-for="Notes" class="form-control" rows="3" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); background: var(--bg-body); color: var(--text-primary);"></textarea>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Забронировать →</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h3 style="margin-bottom: 20px;">Важная информация</h3>
+        <p>✨ После бронирования мы свяжемся с вами для подтверждения</p>
+        <p>📸 Длительность съёмки зависит от выбранной услуги</p>
+        <p>💰 Оплата производится в день съёмки</p>
+        <p>📞 При отмене бронирования позвоните нам за 24 часа</p>
+
+        <hr style="margin: 20px 0; border-color: var(--border-color);" />
+
+        <h4>Наши контакты:</h4>
+        <p>📞 +7 (495) 123-45-67</p>
+        <p>📧 booking@artkadr.ru</p>
+    </div>
+</div>
+
+<div style="margin-top: 32px;">
+    <a asp-controller="Services" asp-action="Index" class="btn btn-outline">← Назад к услугам</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<практы_курсак.Models.Booking>
+
+@{
+    ViewData["Title"] = "Бронирования";
+}
+
+<h1 class="section-title">Управление бронированиями</h1>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert-success" style="background: #4CAF50; color: white; padding: 12px; border-radius: 8px; margin-bottom: 20px;">
+        @TempData["Success"]
+    </div>
+}
+
+<div style="margin-bottom: 30px;">
+    <a asp-action="Create" class="btn btn-primary">+ Новое бронирование</a>
+    <a asp-controller="Services" asp-action="Index" class="btn btn-outline" style="margin-left: 10px;">← Услуги</a>
+</div>
+
+<div class="table-responsive">
+    <table class="gridview-table">
+        <thead>
+            <tr>
+                <th>Клиент</th>
+                <th>Телефон</th>
+                <th>Услуга</th>
+                <th>Дата</th>
+                <th>Время</th>
+                <th>Статус</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Client?.FullName</td>
+                    <td>@item.Client?.Phone</td>
+                    <td>@item.Service?.Name</td>
+                    <td>@item.BookingDate.ToString("dd.MM.yyyy")</td>
+                    <td>@item.BookingTime.ToString(@"hh\:mm")</td>
+                    <td>
+                        @switch (item.Status)
+                        {
+                            case "Pending":
+                                <span style="color: orange;">⏳ В обработке</span>
+                                break;
+                            case "Confirmed":
+                                <span style="color: green;">✅ Подтверждено</span>
+                                break;
+                            case "Completed":
+                                <span style="color: blue;">✓ Выполнено</span>
+                                break;
+                            case "Cancelled":
+                                <span style="color: red;">✗ Отменено</span>
+                                break;
+                        }
+                    </td>
+                    <td>
+                        @if (item.Status == "Pending")
+                        {
+                            <form asp-action="Confirm" method="post" style="display: inline;">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="btn-small" style="background: green; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer;">✅</button>
+                            </form>
+                        }
+                        @if (item.Status != "Cancelled" && item.Status != "Completed")
+                        {
+                            <form asp-action="Cancel" method="post" style="display: inline;">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="btn-small" style="background: orange; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer;">✗</button>
+                            </form>
+                        }
+                        <form asp-action="Delete" method="post" style="display: inline;" onsubmit="return confirm('Удалить бронирование?')">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn-small" style="background: red; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer;">🗑</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
