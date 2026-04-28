@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\практы_курсак.props" />
-</Project>

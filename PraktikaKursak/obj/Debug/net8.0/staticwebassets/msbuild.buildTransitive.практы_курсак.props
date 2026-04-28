@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\практы_курсак.props" />
-</Project>

@@ -1,48 +1,43 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace практы_курсак.Models;
-
-public class Booking
+namespace практы_курсак.Models
 {
-    [Key]
-    public int Id { get; set; }
-
-    [Required(ErrorMessage = "Выберите дату")]
-    [Display(Name = "Дата съёмки")]
-    [DataType(DataType.Date)]
-    public DateTime BookingDate { get; set; }
-
-    [Required(ErrorMessage = "Выберите время")]
-    [Display(Name = "Время съёмки")]
-    public TimeSpan BookingTime { get; set; }
-
-    [Required]
-    [Display(Name = "Статус")]
-    public string Status { get; set; } = "Pending";
-
-    [Display(Name = "Примечания")]
-    [StringLength(500)]
-    public string? Notes { get; set; }
-
-    // Используем DateTimeKind.Unspecified для timestamp without time zone
-    private DateTime _createdAt = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
-
-    public DateTime CreatedAt
+    public class Booking
     {
-        get => _createdAt;
-        set => _createdAt = DateTime.SpecifyKind(value, DateTimeKind.Unspecified);
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        public DateTime BookingDate { get; set; }
+
+        [Required]
+        public TimeSpan BookingTime { get; set; }
+
+        [Required]
+        [MaxLength(20)]
+        public string Status { get; set; } = "Pending";
+
+        [MaxLength(500)]
+        public string? Notes { get; set; }
+
+        private DateTime _createdAt = DateTime.UtcNow;
+        public DateTime CreatedAt
+        {
+            get => _createdAt;
+            set => _createdAt = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
+
+        [Required]
+        public int ServiceId { get; set; }
+
+        [Required]
+        public string UserId { get; set; } = string.Empty;
+
+        [ForeignKey("ServiceId")]
+        public Service? Service { get; set; }
+
+        [ForeignKey("UserId")]
+        public ApplicationUser? User { get; set; }
     }
-
-    [Required]
-    public int ServiceId { get; set; }
-
-    [Required]
-    public int ClientId { get; set; }
-
-    [ForeignKey("ServiceId")]
-    public Service? Service { get; set; }
-
-    [ForeignKey("ClientId")]
-    public Client? Client { get; set; }
 }

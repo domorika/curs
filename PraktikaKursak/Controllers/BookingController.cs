@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using практы_курсак.Data;
 using практы_курсак.Models;
@@ -8,63 +10,69 @@ namespace практы_курсак.Controllers;
 public class BookingController : Controller
 {
     private readonly ApplicationDbContext _context;
-    private readonly ILogger<BookingController> _logger;
+    private readonly UserManager<ApplicationUser> _userManager;
 
-    public BookingController(ApplicationDbContext context, ILogger<BookingController> logger)
+    public BookingController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
     {
         _context = context;
-        _logger = logger;
+        _userManager = userManager;
     }
 
-    // Список всех бронирований
+    // Список бронирований
+    [Authorize]
     public async Task<IActionResult> Index()
     {
-        var bookings = await _context.Bookings
+        var user = await _userManager.GetUserAsync(User);
+        var isAdmin = User.IsInRole("Admin") || (user != null && user.IsAdmin);
+
+        IQueryable<Booking> bookings = _context.Bookings
             .Include(b => b.Service)
-            .Include(b => b.Client)
+            .Include(b => b.User);
+
+        if (!isAdmin && user != null)
+        {
+            bookings = bookings.Where(b => b.UserId == user.Id);
+        }
+
+        ViewBag.IsAdmin = isAdmin;
+        var bookingsList = await bookings
             .OrderByDescending(b => b.BookingDate)
             .ThenBy(b => b.BookingTime)
             .ToListAsync();
 
-        return View(bookings);
+        return View(bookingsList);
     }
 
     // Форма создания бронирования
-    [HttpGet]
-    public async Task<IActionResult> Create()
-    {
-        ViewBag.Services = await _context.Services
-            .Where(s => s.IsActive)
-            .ToListAsync();
-
-        return View(new BookingViewModel());
-    }
-
-    // Обработка создания бронирования
+    [Authorize]
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(BookingViewModel model)
     {
-        // Убираем проверку ModelState для сложных полей
-        if (string.IsNullOrEmpty(model.FullName) || string.IsNullOrEmpty(model.Phone) || model.ServiceId == 0)
+        var user = await _userManager.GetUserAsync(User);
+
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        if (model.ServiceId == 0)
         {
             ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
-            ModelState.AddModelError("", "Заполните все обязательные поля");
+            ModelState.AddModelError("ServiceId", "Выберите услугу");
+            return View(model);
+        }
+
+        if (string.IsNullOrEmpty(model.BookingTime))
+        {
+            ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
+            ModelState.AddModelError("BookingTime", "Выберите время");
             return View(model);
         }
 
         try
         {
-            // Преобразование времени
-            TimeSpan bookingTime;
-            try
-            {
-                bookingTime = TimeSpan.Parse(model.BookingTime);
-            }
-            catch
-            {
-                bookingTime = TimeSpan.FromHours(12); // значение по умолчанию
-            }
+            var bookingTime = TimeSpan.Parse(model.BookingTime);
 
             // Проверка на занятость времени
             var isBusy = await _context.Bookings.AnyAsync(b =>
@@ -79,44 +87,16 @@ public class BookingController : Controller
                 return View(model);
             }
 
-            // Поиск существующего клиента
-            var client = await _context.Clients
-                .FirstOrDefaultAsync(c => c.Phone == model.Phone);
-
-            // Если клиент не найден, создаём нового
-            if (client == null)
-            {
-                client = new Client
-                {
-                    FullName = model.FullName.Trim(),
-                    Phone = model.Phone.Trim(),
-                    Email = model.Email?.Trim(),
-                    RegisteredAt = DateTime.Now
-                };
-                _context.Clients.Add(client);
-                await _context.SaveChangesAsync();
-            }
-            else
-            {
-                // Обновляем данные существующего клиента если изменились
-                if (client.FullName != model.FullName)
-                    client.FullName = model.FullName;
-                if (client.Email != model.Email)
-                    client.Email = model.Email;
-
-                _context.Clients.Update(client);
-            }
-
-            // Создание бронирования
+            // Создание бронирования (данные пользователя берутся из его профиля)
             var booking = new Booking
             {
                 ServiceId = model.ServiceId,
-                ClientId = client.Id,
+                UserId = user.Id,
                 BookingDate = model.BookingDate.Date,
                 BookingTime = bookingTime,
                 Notes = model.Notes,
                 Status = "Pending",
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.UtcNow
             };
 
             _context.Bookings.Add(booking);
@@ -127,16 +107,14 @@ public class BookingController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Ошибка при создании бронирования");
-            var errorMessage = ex.InnerException?.Message ?? ex.Message;
-            ModelState.AddModelError("", $"Ошибка: {errorMessage}");
-
             ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
+            ModelState.AddModelError("", $"Ошибка: {ex.Message}");
             return View(model);
         }
     }
 
-    // Подтверждение бронирования
+    // Подтверждение бронирования (только для администратора)
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<IActionResult> Confirm(int id)
     {
@@ -145,26 +123,47 @@ public class BookingController : Controller
         {
             booking.Status = "Confirmed";
             await _context.SaveChangesAsync();
-            TempData["Success"] = "Бронирование подтверждено";
+            TempData["Success"] = $"Бронирование #{id} подтверждено";
+        }
+        else
+        {
+            TempData["Error"] = "Бронирование не найдено";
         }
         return RedirectToAction(nameof(Index));
     }
 
-    // Отмена бронирования
+    // Отмена бронирования (администратор может отменить любое, пользователь - только своё)
+    [Authorize]
     [HttpPost]
     public async Task<IActionResult> Cancel(int id)
     {
+        var user = await _userManager.GetUserAsync(User);
+        var isAdmin = User.IsInRole("Admin") || (user != null && user.IsAdmin);
+
         var booking = await _context.Bookings.FindAsync(id);
-        if (booking != null)
+
+        if (booking == null)
+        {
+            TempData["Error"] = "Бронирование не найдено";
+            return RedirectToAction(nameof(Index));
+        }
+
+        if (isAdmin || booking.UserId == user?.Id)
         {
             booking.Status = "Cancelled";
             await _context.SaveChangesAsync();
-            TempData["Success"] = "Бронирование отменено";
+            TempData["Success"] = $"Бронирование #{id} отменено";
         }
+        else
+        {
+            TempData["Error"] = "У вас нет прав для отмены этого бронирования";
+        }
+
         return RedirectToAction(nameof(Index));
     }
 
-    // Удаление бронирования
+    // Удаление бронирования (только для администратора)
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<IActionResult> Delete(int id)
     {
@@ -173,7 +172,30 @@ public class BookingController : Controller
         {
             _context.Bookings.Remove(booking);
             await _context.SaveChangesAsync();
-            TempData["Success"] = "Бронирование удалено";
+            TempData["Success"] = $"Бронирование #{id} удалено";
+        }
+        else
+        {
+            TempData["Error"] = "Бронирование не найдено";
+        }
+        return RedirectToAction(nameof(Index));
+    }
+
+    // Завершение бронирования (только для администратора)
+    [Authorize(Roles = "Admin")]
+    [HttpPost]
+    public async Task<IActionResult> Complete(int id)
+    {
+        var booking = await _context.Bookings.FindAsync(id);
+        if (booking != null)
+        {
+            booking.Status = "Completed";
+            await _context.SaveChangesAsync();
+            TempData["Success"] = $"Бронирование #{id} отмечено как выполненное";
+        }
+        else
+        {
+            TempData["Error"] = "Бронирование не найдено";
         }
         return RedirectToAction(nameof(Index));
     }

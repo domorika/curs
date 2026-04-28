@@ -1,0 +1,64 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<h1 class="section-title">Регистрация</h1>
+
+<div class="contact-grid">
+    <div class="contact-info">
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="LastName" style="display: block; margin-bottom: 5px;">Фамилия *</label>
+                <input asp-for="LastName" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="FirstName" style="display: block; margin-bottom: 5px;">Имя *</label>
+                <input asp-for="FirstName" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="MiddleName" style="display: block; margin-bottom: 5px;">Отчество</label>
+                <input asp-for="MiddleName" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Phone" style="display: block; margin-bottom: 5px;">Телефон *</label>
+                <input asp-for="Phone" class="form-control" placeholder="+7 (XXX) XXX-XX-XX" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Email" style="display: block; margin-bottom: 5px;">Email *</label>
+                <input asp-for="Email" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Password" style="display: block; margin-bottom: 5px;">Пароль *</label>
+                <input asp-for="Password" type="password" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="ConfirmPassword" style="display: block; margin-bottom: 5px;">Подтверждение пароля *</label>
+                <input asp-for="ConfirmPassword" type="password" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Зарегистрироваться</button>
+        </form>
+
+        <hr style="margin: 20px 0;" />
+
+        <p style="text-align: center;">
+            Уже есть аккаунт? <a asp-action="Login">Войти</a>
+        </p>
+    </div>
+</div>

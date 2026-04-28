@@ -1,0 +1,43 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Вход";
+}
+
+<h1 class="section-title">Вход</h1>
+
+<div class="contact-grid">
+    <div class="contact-info">
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Email" style="display: block; margin-bottom: 5px;">Email</label>
+                <input asp-for="Email" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label asp-for="Password" style="display: block; margin-bottom: 5px;">Пароль</label>
+                <input asp-for="Password" type="password" class="form-control" style="width: 100%; padding: 10px;" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label>
+                    <input asp-for="RememberMe" /> Запомнить меня
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Войти</button>
+        </form>
+
+        <hr style="margin: 20px 0;" />
+
+        <p style="text-align: center;">
+            Нет аккаунта? <a asp-action="Register">Зарегистрироваться</a>
+        </p>
+        <p style="text-align: center; font-size: 12px; color: gray;">
+            Для администратора: admin@artkadr.ru / Admin123!
+        </p>
+    </div>
+</div>

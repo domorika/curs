@@ -1,0 +1,79 @@
+
+DROP TABLE IF EXISTS "AspNetUserTokens" CASCADE;
+DROP TABLE IF EXISTS "AspNetUserLogins" CASCADE;
+DROP TABLE IF EXISTS "AspNetUserClaims" CASCADE;
+DROP TABLE IF EXISTS "AspNetUserRoles" CASCADE;
+DROP TABLE IF EXISTS "AspNetRoles" CASCADE;
+DROP TABLE IF EXISTS "Bookings" CASCADE;
+DROP TABLE IF EXISTS "Services" CASCADE;
+DROP TABLE IF EXISTS "AspNetUsers" CASCADE;
+DROP TABLE IF EXISTS "__EFMigrationsHistory" CASCADE;
+
+CREATE TABLE "AspNetUsers" (
+    "Id" TEXT PRIMARY KEY,
+    "UserName" VARCHAR(256) NULL,
+    "NormalizedUserName" VARCHAR(256) NULL,
+    "Email" VARCHAR(256) NULL,
+    "NormalizedEmail" VARCHAR(256) NULL,
+    "EmailConfirmed" BOOLEAN NOT NULL DEFAULT FALSE,
+    "PasswordHash" TEXT NULL,           -- Хэшированный пароль
+    "SecurityStamp" TEXT NULL,
+    "ConcurrencyStamp" TEXT NULL,
+    "PhoneNumber" TEXT NULL,
+    "PhoneNumberConfirmed" BOOLEAN NOT NULL DEFAULT FALSE,
+    "TwoFactorEnabled" BOOLEAN NOT NULL DEFAULT FALSE,
+    "LockoutEnd" TIMESTAMP NULL,
+    "LockoutEnabled" BOOLEAN NOT NULL DEFAULT TRUE,
+    "AccessFailedCount" INTEGER NOT NULL DEFAULT 0,
+    -- Наши дополнительные поля
+    "LastName" TEXT NOT NULL DEFAULT '',
+    "FirstName" TEXT NOT NULL DEFAULT '',
+    "MiddleName" TEXT NULL,
+    "RegisteredAt" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "IsAdmin" BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+
+CREATE TABLE "Services" (
+    "Id" SERIAL PRIMARY KEY,
+    "Name" VARCHAR(100) NOT NULL,
+    "Price" DECIMAL(10,2) NOT NULL,
+    "DurationMinutes" INTEGER NOT NULL,
+    "Description" VARCHAR(500) NULL,
+    "IsActive" BOOLEAN NOT NULL DEFAULT TRUE
+);
+
+
+CREATE TABLE "Bookings" (
+    "Id" SERIAL PRIMARY KEY,
+    "BookingDate" DATE NOT NULL,
+    "BookingTime" TIME WITHOUT TIME ZONE NOT NULL,
+    "Status" VARCHAR(20) NOT NULL DEFAULT 'Pending',
+    "Notes" TEXT NULL,
+    "CreatedAt" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "ServiceId" INTEGER NOT NULL,
+    "UserId" TEXT NOT NULL,
+    
+    CONSTRAINT "FK_Bookings_Services_ServiceId" 
+        FOREIGN KEY ("ServiceId") REFERENCES "Services"("Id") ON DELETE RESTRICT,
+    CONSTRAINT "FK_Bookings_AspNetUsers_UserId" 
+        FOREIGN KEY ("UserId") REFERENCES "AspNetUsers"("Id") ON DELETE CASCADE,
+    CONSTRAINT "UC_Booking_DateTime" UNIQUE ("BookingDate", "BookingTime")
+);
+
+
+CREATE INDEX "IX_Bookings_BookingDate" ON "Bookings"("BookingDate");
+CREATE INDEX "IX_Bookings_ServiceId" ON "Bookings"("ServiceId");
+CREATE INDEX "IX_Bookings_UserId" ON "Bookings"("UserId");
+CREATE INDEX "EmailIndex" ON "AspNetUsers"("NormalizedEmail");
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers"("NormalizedUserName");
+
+
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (1, 'Семейная фотосессия', 5000.00, 60, 'Профессиональная семейная съёмка в студии. В стоимость входит: работа фотографа 1 час, 20 обработанных фото, помощь в позировании.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (2, 'Портретная съёмка', 4000.00, 45, 'Индивидуальная портретная съёмка. В стоимость входит: работа фотографа 45 мин, 15 обработанных фото, выбор локации.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (3, 'Ретушь фото', 1500.00, 30, 'Профессиональная обработка фотографий. Ретушь кожи, цветокоррекция, кадрирование.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (4, 'Фотокнига', 3500.00, 0, 'Создание фотокниги премиум-качества. Дизайн макета, печать, переплёт.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (6, 'Свадебная фотосессия', 7000.00, 90, 'Выездная свадебная съёмка. В стоимость входит: работа фотографа 1.5 часа, 30 обработанных фото.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (7, 'Love-story', 4500.00, 60, 'Романтическая съёмка пары. В стоимость входит: работа фотографа 1 час, 25 обработанных фото.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (8, 'Предметная съёмка', 5000.00, 60, 'Предметная съёмка для интернет-магазинов. В стоимость входит: 30 обработанных фото на белом фоне.', true);
+INSERT INTO public."Services" ("Id", "Name", "Price", "DurationMinutes", "Description", "IsActive") VALUES (5, 'Рекламная съёмка', 6500.00, 90, 'Рекламная съёмка товаров для маркетплейсов и соцсетей. В стоимость входит: 20 обработанных фото.', true);

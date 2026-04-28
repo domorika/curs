@@ -2,12 +2,15 @@ wwwroot\css\dark-theme.css
 wwwroot\css\light-theme.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\location1.jpg
+wwwroot\images\location2.jpg
+wwwroot\images\location3.jpg
+wwwroot\images\location4.jpg
 wwwroot\images\logo.jpg
 wwwroot\images\photo10.jpg
 wwwroot\images\photo12.jpg
 wwwroot\images\photo13.jpg
 wwwroot\images\photo9.jpg
-wwwroot\images\studio-banner.png
 wwwroot\js\site.js
 wwwroot\js\theme-switcher.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
