@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
+// Настройка PostgreSQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -25,29 +26,32 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Проверка подключения к базе данных (без миграций)
 try
 {
     using (var scope = app.Services.CreateScope())
     {
         var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-        var canConnect = await dbContext.Database.CanConnectAsync();
+        // Убираем await и делаем синхронный вызов или добавляем async
+        var canConnect = dbContext.Database.CanConnect();
 
         if (canConnect)
         {
-            Console.WriteLine("Успешное подключение к базе данных PostgreSQL!");
-            =
-            var servicesCount = await dbContext.Services.CountAsync();
-            Console.WriteLine($"В таблице Services: {servicesCount} записей");
+            Console.WriteLine("✅ Успешное подключение к базе данных PostgreSQL!");
+
+            // Проверка, что таблицы существуют
+            var servicesCount = dbContext.Services.Count();
+            Console.WriteLine($"📊 В таблице Services: {servicesCount} записей");
         }
         else
         {
-            Console.WriteLine("Не удалось подключиться к базе данных");
+            Console.WriteLine("❌ Не удалось подключиться к базе данных");
         }
     }
 }
 catch (Exception ex)
 {
-    Console.WriteLine($"Ошибка подключения к БД: {ex.Message}");
+    Console.WriteLine($"❌ Ошибка подключения к БД: {ex.Message}");
 }
 
 app.Run();

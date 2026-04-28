@@ -25,8 +25,14 @@ public class Booking
     [StringLength(500)]
     public string? Notes { get; set; }
 
-    [Display(Name = "Дата создания")]
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    // Используем DateTimeKind.Unspecified для timestamp without time zone
+    private DateTime _createdAt = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
+
+    public DateTime CreatedAt
+    {
+        get => _createdAt;
+        set => _createdAt = DateTime.SpecifyKind(value, DateTimeKind.Unspecified);
+    }
 
     [Required]
     public int ServiceId { get; set; }

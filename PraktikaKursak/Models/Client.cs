@@ -22,6 +22,15 @@ public class Client
     [EmailAddress]
     public string? Email { get; set; }
 
-    public DateTime RegisteredAt { get; set; } = DateTime.Now;
+    // Используем DateTimeKind.Unspecified для timestamp without time zone
+    private DateTime _registeredAt = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
+
+    public DateTime RegisteredAt
+    {
+        get => _registeredAt;
+        set => _registeredAt = DateTime.SpecifyKind(value, DateTimeKind.Unspecified);
+    }
+
+    // Навигационное свойство
     public ICollection<Booking>? Bookings { get; set; }
 }
