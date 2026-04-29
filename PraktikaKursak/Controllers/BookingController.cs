@@ -44,29 +44,43 @@ public class BookingController : Controller
     }
 
     // Форма создания бронирования
+    // GET: Booking/Create — отображение формы
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> Create()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        ViewBag.Services = await _context.Services
+            .Where(s => s.IsActive)
+            .OrderBy(s => s.Name)
+            .ToListAsync();
+
+        return View(new BookingViewModel());
+    }
+
+    // POST: Booking/Create — обработка формы
     [Authorize]
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(BookingViewModel model)
     {
         var user = await _userManager.GetUserAsync(User);
-
         if (user == null)
         {
             return RedirectToAction("Login", "Account");
         }
 
-        if (model.ServiceId == 0)
+        if (!ModelState.IsValid)
         {
-            ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
-            ModelState.AddModelError("ServiceId", "Выберите услугу");
-            return View(model);
-        }
-
-        if (string.IsNullOrEmpty(model.BookingTime))
-        {
-            ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
-            ModelState.AddModelError("BookingTime", "Выберите время");
+            ViewBag.Services = await _context.Services
+                .Where(s => s.IsActive)
+                .OrderBy(s => s.Name)
+                .ToListAsync();
             return View(model);
         }
 
@@ -74,7 +88,7 @@ public class BookingController : Controller
         {
             var bookingTime = TimeSpan.Parse(model.BookingTime);
 
-            // Проверка на занятость времени
+            // Проверка занятости времени
             var isBusy = await _context.Bookings.AnyAsync(b =>
                 b.BookingDate.Date == model.BookingDate.Date &&
                 b.BookingTime == bookingTime &&
@@ -82,12 +96,15 @@ public class BookingController : Controller
 
             if (isBusy)
             {
-                ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
+                ViewBag.Services = await _context.Services
+                    .Where(s => s.IsActive)
+                    .OrderBy(s => s.Name)
+                    .ToListAsync();
+
                 ModelState.AddModelError("", "Это время уже занято. Выберите другое время.");
                 return View(model);
             }
 
-            // Создание бронирования (данные пользователя берутся из его профиля)
             var booking = new Booking
             {
                 ServiceId = model.ServiceId,
@@ -107,8 +124,12 @@ public class BookingController : Controller
         }
         catch (Exception ex)
         {
-            ViewBag.Services = await _context.Services.Where(s => s.IsActive).ToListAsync();
-            ModelState.AddModelError("", $"Ошибка: {ex.Message}");
+            ViewBag.Services = await _context.Services
+                .Where(s => s.IsActive)
+                .OrderBy(s => s.Name)
+                .ToListAsync();
+
+            ModelState.AddModelError("", $"Ошибка при создании бронирования: {ex.Message}");
             return View(model);
         }
     }

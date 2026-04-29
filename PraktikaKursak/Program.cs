@@ -5,13 +5,13 @@ using практы_курсак.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.SetMinimumLevel(LogLevel.Warning);
+
 builder.Services.AddControllersWithViews();
 
-// Настройка PostgreSQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Настройка Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = false;
@@ -24,7 +24,6 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddEntityFrameworkStores<ApplicationDbContext>()
 .AddDefaultTokenProviders();
 
-// Настройка аутентификации
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login";
@@ -35,7 +34,16 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
+// === Добавь сюда ===
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+// =====================
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+    // app.UseMigrationsEndPoint(); // можно оставить закомментированным
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
@@ -52,33 +60,29 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// ============================================
-// СОЗДАНИЕ РОЛИ ADMIN И АДМИНИСТРАТОРА
-// ЭТОТ БЛОК ДОЛЖЕН БЫТЬ ПОСЛЕ app = builder.Build() !!!
-// ============================================
-using (var scope = app.Services.CreateScope())
-{
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+// Seed roles and admin user
+await SeedAdminAsync(app);
 
-    // Создание роли Admin (если её нет)
-    if (!await roleManager.RoleExistsAsync("Admin"))
+app.Run();
+
+static async Task SeedAdminAsync(WebApplication app)
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+    const string adminRole = "Admin";
+    if (!await roleManager.RoleExistsAsync(adminRole))
     {
-        var roleResult = await roleManager.CreateAsync(new IdentityRole("Admin"));
-        if (roleResult.Succeeded)
-        {
-            Console.WriteLine("Роль Admin создана");
-        }
-        else
+        var roleResult = await roleManager.CreateAsync(new IdentityRole(adminRole));
+        if (!roleResult.Succeeded)
         {
             foreach (var error in roleResult.Errors)
-            {
                 Console.WriteLine($"Ошибка создания роли: {error.Description}");
-            }
         }
     }
 
-    // Создание администратора
     var adminEmail = "admin@artkadr.ru";
     var adminUser = await userManager.FindByEmailAsync(adminEmail);
 
@@ -97,31 +101,19 @@ using (var scope = app.Services.CreateScope())
         };
 
         var result = await userManager.CreateAsync(adminUser, "Admin123!");
-
         if (result.Succeeded)
         {
-            // Добавляем пользователя в роль Admin
-            var addToRoleResult = await userManager.AddToRoleAsync(adminUser, "Admin");
-            if (addToRoleResult.Succeeded)
-            {
-                Console.WriteLine("Администратор создан и добавлен в роль Admin");
-            }
-            else
+            var addToRoleResult = await userManager.AddToRoleAsync(adminUser, adminRole);
+            if (!addToRoleResult.Succeeded)
             {
                 foreach (var error in addToRoleResult.Errors)
-                {
                     Console.WriteLine($"Ошибка добавления в роль: {error.Description}");
-                }
             }
         }
         else
         {
             foreach (var error in result.Errors)
-            {
                 Console.WriteLine($"Ошибка создания администратора: {error.Description}");
-            }
         }
     }
 }
-
-app.Run();

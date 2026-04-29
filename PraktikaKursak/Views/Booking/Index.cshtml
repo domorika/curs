@@ -20,19 +20,17 @@
     </div>
 }
 
-@if (!isAdmin)
-{
-    <div style="margin-bottom: 30px;">
+<div style="margin-bottom: 30px;">
+    @if (!isAdmin)
+    {
         <a asp-action="Create" class="btn btn-primary">+ Записаться на съёмку</a>
-        <a asp-controller="Services" asp-action="Index" class="btn btn-outline" style="margin-left: 10px;">← Услуги</a>
-    </div>
-}
-else
-{
-    <div style="margin-bottom: 30px;">
-        <a asp-controller="Services" asp-action="Index" class="btn btn-outline">← Услуги</a>
-    </div>
-}
+    }
+
+    <a asp-controller="Services" asp-action="Index" class="btn btn-outline"
+       style="margin-left: @(isAdmin ? "0" : "10px");">
+        ← Услуги
+    </a>
+</div>
 
 <div class="table-responsive">
     <table class="gridview-table">
@@ -60,10 +58,10 @@ else
                             <strong>@item.User.LastName @item.User.FirstName @item.User.MiddleName</strong>
                     
                             <br />
-                            <small style="color: var(--text-secondary);">📧 @item.User.Email</small>
+                            <small style="color: var(--text-secondary);">@item.User.Email</small>
 
                             <br />
-                            <small style="color: var(--text-secondary);">📞 @item.User.PhoneNumber</small>
+                            <small style="color: var(--text-secondary);">@item.User.PhoneNumber</small>
                         }
                         else
                         {
@@ -77,16 +75,16 @@ else
                         @switch (item.Status)
                         {
                             case "Pending":
-                                <span style="color: orange;">⏳ В обработке</span>
+                                <span style="color: orange;">⧖ В обработке</span>
                                 break;
                             case "Confirmed":
-                                <span style="color: green;">✅ Подтверждено</span>
+                                <span style="color: green;">✔ Подтверждено</span>
                                 break;
                             case "Completed":
-                                <span style="color: blue;">✓ Выполнено</span>
+                                <span style="color: blue;">✔ Выполнено</span>
                                 break;
                             case "Cancelled":
-                                <span style="color: red;">✗ Отменено</span>
+                                <span style="color: red;">✖ Отменено</span>
                                 break;
                             default:
                                 <span>@item.Status</span>
@@ -101,26 +99,26 @@ else
                             {
                                 <form asp-action="Confirm" method="post" style="display: inline;">
                                     <input type="hidden" name="id" value="@item.Id" />
-                                    <button type="submit" title="Подтвердить" style="background: green; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">✅</button>
+                                    <button type="submit" title="Подтвердить" style="background: green; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">✔</button>
                                 </form>
                             }
                             @if (item.Status == "Confirmed")
                             {
                                 <form asp-action="Complete" method="post" style="display: inline;">
                                     <input type="hidden" name="id" value="@item.Id" />
-                                    <button type="submit" title="Выполнено" style="background: blue; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">✓</button>
+                                    <button type="submit" title="Выполнено" style="background: blue; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">✔</button>
                                 </form>
                             }
                             @if (item.Status != "Cancelled" && item.Status != "Completed")
                             {
                                 <form asp-action="Cancel" method="post" style="display: inline;">
                                     <input type="hidden" name="id" value="@item.Id" />
-                                    <button type="submit" title="Отменить" style="background: orange; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">✗</button>
+                                    <button type="submit" title="Отменить" style="background: orange; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">✖</button>
                                 </form>
                             }
                             <form asp-action="Delete" method="post" style="display: inline;" onsubmit="return confirm('Удалить бронирование?')">
                                 <input type="hidden" name="id" value="@item.Id" />
-                                <button type="submit" title="Удалить" style="background: red; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">🗑</button>
+                                <button type="submit" title="Удалить" style="background: red; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;">♻</button>
                             </form>
                         </td>
                     }
@@ -131,7 +129,7 @@ else
                             <td>
                                 <form asp-action="Cancel" method="post" style="display: inline;">
                                     <input type="hidden" name="id" value="@item.Id" />
-                                    <button type="submit" title="Отменить запись" style="background: orange; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;" onclick="return confirm('Отменить бронирование?')">✗ Отменить</button>
+                                    <button type="submit" title="Отменить запись" style="background: orange; color: white; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; border-radius: 5px;" onclick="return confirm('Отменить бронирование?')">✖ Отменить</button>
                                 </form>
                             </td>
                         }

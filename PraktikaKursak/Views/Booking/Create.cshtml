@@ -4,7 +4,6 @@
 @{
     ViewData["Title"] = "Запись на съёмку";
     var services = ViewBag.Services as List<Service>;
-    var user = Context.User;
 }
 
 <h1 class="section-title">Запись на съёмку</h1>
@@ -13,8 +12,8 @@
     <div class="contact-info">
         <!-- Информация о пользователе (только для отображения) -->
         <div style="background: var(--bg-table-header); padding: 15px; border-radius: 10px; margin-bottom: 25px;">
-            <p style="margin: 5px 0;"><strong>👤 Вы записываетесь как:</strong></p>
-            <p style="margin: 5px 0;">📝 @(User.Identity?.Name ?? "Пользователь")</p>
+            <p style="margin: 5px 0;"><strong>Вы записываетесь как:</strong></p>
+            <p style="margin: 5px 0;">@(User.Identity?.Name ?? "Пользователь")</p>
         </div>
 
         <form asp-action="Create" method="post">
@@ -73,19 +72,16 @@
 
     <div class="contact-info">
         <h3 style="margin-bottom: 20px;">Важная информация</h3>
-        <p>✨ После бронирования мы свяжемся с вами для подтверждения</p>
-        <p>📸 Длительность съёмки зависит от выбранной услуги</p>
-        <p>💰 Оплата производится в день съёмки</p>
-        <p>📞 При отмене бронирования позвоните нам за 24 часа</p>
+        <p>✦ После бронирования мы свяжемся с вами для подтверждения</p>
+        <p>🎥Длительность съёмки зависит от выбранной услуги</p>
+        <p>$ Оплата производится в день съёмки</p>
+        <p>☎ При отмене бронирования позвоните нам за 24 часа</p>
 
         <hr style="margin: 20px 0; border-color: var(--border-color);" />
 
         <h4>Ваши данные:</h4>
-        <p>📧 Email: @User.Identity?.Name</p>
-        <p>📞 Телефон: @(Context.User?.Claims?.FirstOrDefault(c => c.Type == "PhoneNumber")?.Value ?? "не указан")</p>
-        <p style="font-size: 12px; color: var(--text-secondary); margin-top: 15px;">
-            При необходимости изменить данные - обратитесь в личный кабинет
-        </p>
+        <p>✉ Email: @User.Identity?.Name</p>
+        <p>☎ Телефон: @(Context.User?.Claims?.FirstOrDefault(c => c.Type == "PhoneNumber")?.Value ?? "не указан")</p>
     </div>
 </div>
 
