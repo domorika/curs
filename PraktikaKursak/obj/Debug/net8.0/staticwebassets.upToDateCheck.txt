@@ -6,6 +6,7 @@ wwwroot\images\features\photobook.jpg
 wwwroot\images\features\professional-shooting.jpg
 wwwroot\images\features\retouch.jpg
 wwwroot\images\location1.jpg
+wwwroot\images\location2.jpg
 wwwroot\images\location3.jpg
 wwwroot\images\location4.jpg
 wwwroot\images\logo.jpg
@@ -13,7 +14,6 @@ wwwroot\images\photo10.jpg
 wwwroot\images\photo12.jpg
 wwwroot\images\photo13.jpg
 wwwroot\images\photo9.jpg
-wwwroot\js\site.js
 wwwroot\js\theme-switcher.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -72,4 +72,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\images\location2.jpg
+wwwroot\js\site.js

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("практы_курсак")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6de420071550cbc35aeefed91f6d8c63debbdec7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5112fe2f8591db0c86da934beeb6bb9d770334a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("практы_курсак")]
 [assembly: System.Reflection.AssemblyTitleAttribute("практы_курсак")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

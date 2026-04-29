@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\wwwroot\\css\\light-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\css\\light-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\css\\dark-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -131,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260428203504_AddSeparateNameFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -157,10 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\20260428163846_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260428163846_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\wwwroot\\css\\light-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|solutionrelative:wwwroot\\css\\light-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A092C5C7-9991-452D-AEEC-04AD37740A4D}|\u043F\u0440\u0430\u043A\u0442\u044B_\u043A\u0443\u0440\u0441\u0430\u043A.csproj|c:\\users\\13\\desktop\\curs-pr2\\praktikakursak\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -194,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 35,
+          "SelectedChildIndex": 43,
           "Children": [
             {
               "$type": "Bookmark",
@@ -206,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -214,12 +214,11 @@
               "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T16:32:32.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-29T16:32:32.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "20260428212015_AddSeparateNameFields.Designer.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\20260428212015_AddSeparateNameFields.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\20260428212015_AddSeparateNameFields.Designer.cs",
@@ -227,12 +226,11 @@
               "RelativeToolTip": "Migrations\\20260428212015_AddSeparateNameFields.Designer.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAWwA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T16:24:58.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-29T16:24:58.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "20260428212015_AddSeparateNameFields.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\20260428212015_AddSeparateNameFields.cs",
               "RelativeDocumentMoniker": "Migrations\\20260428212015_AddSeparateNameFields.cs",
@@ -240,12 +238,11 @@
               "RelativeToolTip": "Migrations\\20260428212015_AddSeparateNameFields.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:20:15.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T21:20:15.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "20260428203607_AddSeparateNameFields.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\20260428203607_AddSeparateNameFields.cs",
               "RelativeDocumentMoniker": "Migrations\\20260428203607_AddSeparateNameFields.cs",
@@ -257,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "20260428203504_AddSeparateNameFields.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\20260428203504_AddSeparateNameFields.cs",
               "RelativeDocumentMoniker": "Migrations\\20260428203504_AddSeparateNameFields.cs",
@@ -269,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "20260428163846_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Migrations\\20260428163846_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20260428163846_InitialCreate.cs",
@@ -293,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -305,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -317,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -325,12 +322,11 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T15:42:14.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T15:42:14.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
@@ -338,12 +334,11 @@
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T15:41:21.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T15:41:21.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
@@ -351,12 +346,11 @@
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T15:40:58.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T15:40:58.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
@@ -364,12 +358,11 @@
               "RelativeToolTip": "Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T15:40:04.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T15:40:04.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
@@ -377,12 +370,11 @@
               "RelativeToolTip": "Controllers\\BookingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T15:13:00.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:13:00.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ContactsController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\ContactsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContactsController.cs",
@@ -390,12 +382,11 @@
               "RelativeToolTip": "Controllers\\ContactsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-23T11:08:52.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T11:08:52.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "BookingViewModel.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Models\\BookingViewModel.cs",
               "RelativeDocumentMoniker": "Models\\BookingViewModel.cs",
@@ -403,12 +394,11 @@
               "RelativeToolTip": "Models\\BookingViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T15:08:50.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:08:50.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Models\\Booking.cs",
@@ -416,12 +406,11 @@
               "RelativeToolTip": "Models\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T15:08:07.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:08:07.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Booking\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Booking\\Create.cshtml",
@@ -429,12 +418,11 @@
               "RelativeToolTip": "Views\\Booking\\Create.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAEsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-26T15:14:23.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:14:23.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Booking\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Booking\\Index.cshtml",
@@ -442,12 +430,11 @@
               "RelativeToolTip": "Views\\Booking\\Index.cshtml",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAAHsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-26T15:13:47.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:13:47.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -455,12 +442,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T20:28:51.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T20:28:51.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -468,24 +454,24 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T15:11:00.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:11:00.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEYAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAYwF0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-20T16:57:06.005Z"
+              "WhenOpened": "2026-04-20T16:57:06.005Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -497,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -509,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Contacts\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Contacts\\Index.cshtml",
@@ -517,12 +503,11 @@
               "RelativeToolTip": "Views\\Contacts\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-23T11:11:25.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T11:11:25.347Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "ThemeController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\ThemeController.cs",
               "RelativeDocumentMoniker": "Controllers\\ThemeController.cs",
@@ -530,12 +515,11 @@
               "RelativeToolTip": "Controllers\\ThemeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T15:45:29.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T15:45:29.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -543,12 +527,11 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-26T15:11:31.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:11:31.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -556,12 +539,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-26T15:11:09.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T15:11:09.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "dark-theme.css",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\css\\dark-theme.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\dark-theme.css",
@@ -573,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Models\\Service.cs",
               "RelativeDocumentMoniker": "Models\\Service.cs",
@@ -581,8 +563,7 @@
               "RelativeToolTip": "Models\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T16:07:27.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T16:07:27.987Z"
             },
             {
               "$type": "Document",
@@ -619,20 +600,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAAALkAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAALYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-20T16:26:44.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Portfolio\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
@@ -644,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Services\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Services\\Index.cshtml",
@@ -656,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -668,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ServicesController.cs",
@@ -676,12 +657,11 @@
               "RelativeToolTip": "Controllers\\ServicesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T17:21:02.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T17:21:02.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "PortfolioController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\PortfolioController.cs",
               "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
@@ -689,12 +669,11 @@
               "RelativeToolTip": "Controllers\\PortfolioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-23T11:08:14.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T11:08:14.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -702,12 +681,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T17:29:15.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T17:29:15.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "theme-switcher.js",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\js\\theme-switcher.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\theme-switcher.js",
@@ -719,32 +697,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 0,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
               "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\js\\site.js",
               "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-04-25T16:43:06.086Z"
+              "WhenOpened": "2026-04-25T16:43:06.086Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAIwIsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAHgBAAAAAAAAAAAAAJoBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-04-21T17:55:17.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 3,
               "Title": "light-theme.css",
               "DocumentMoniker": "C:\\Users\\13\\Desktop\\curs-pr2\\PraktikaKursak\\wwwroot\\css\\light-theme.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\light-theme.css",
@@ -752,7 +731,8 @@
               "RelativeToolTip": "wwwroot\\css\\light-theme.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-25T14:50:50.342Z"
+              "WhenOpened": "2026-04-25T14:50:50.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
